@@ -26,7 +26,7 @@ export class App extends Component {
     return (
         <div>
             <button onClick={() => {this.setState({name:'LEE DAE HO'})}}>Click</button>
-            <h1>Hellow!!!! {this.state.name}</h1>
+            <h1>Hellow!!! {this.state.name}</h1>
         </div>
     )
   }

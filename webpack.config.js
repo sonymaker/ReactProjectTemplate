@@ -9,12 +9,13 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        hot: true,
-        inline: true,
-        open: true,
+        contentBase: path.join(__dirname, 'public'),
+		watchContentBase: true,
         //host: '0.0.0.0',
         port: 4000,
-        contentBase: path.join(__dirname, 'public')
+        inline: true,
+        open: true,
+        hot: true
     },
     module: {
         rules: [
